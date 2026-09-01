@@ -10,7 +10,10 @@ const NRP = "0000000000"
 
 // TODO(Level 3): kembalikan args[0] kalau ada isinya, kalau tidak kembalikan fallback.
 func ResolveNama(args []string, fallback string) string {
-	return "TODO"
+	if len(args) == 0 {
+		return fallback
+	}
+	return args[0]
 }
 
 // TODO(Level 7): kembalikan kalimat sapaan untuk nama yang diberikan,
