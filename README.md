@@ -38,7 +38,7 @@ Bagian di bawah ini **isi bertahap** sesuai level yang sedang kalian kerjakan (l
 Kalau anggota tim menjalankan program ini dengan versi Go yang berbeda, output dari `CetakInfo` juga akan berbeda karena memuat hasil `runtime.Version()`, misalnya satu orang menampilkan go1.21.0 sementara yang lain go1.23.0. Untuk program sederhana tidak akan jadi masalah karena perbedaan versi hanya terlihat di teks yang dicetak, tidak mempengaruhi jalannya program. Namun jika programnya kompleks, misal menggunakan fitur bahasa yang hanya tersedia di versi Go tertentu, atau bergantung pada library yang berubah antar versi, perbedaan versi Go bisa jadi masalah. Kalau satu anggota tim pakai versi lama yang tidak mendukung fitur tersebut, kodenya bisa gagal di-build di komputernya meskipun berhasil di komputer anggota lain, sehingga perlu menyepakati satu versi Go yang sama di awal.
 
 ## Catatan Merge Conflict
-(tulis di sini)
+Conflict terjadi pada baris `return` di dalam fungsi `CetakInfo`, di file `pertemuan-01/main.go` karena dua branch sama-sama mengubah baris yang sama. Di branch `main`, format pemisah baris tersebut diubah `|` (`"Nama: %s | NRP: %s | %s"`), sedangkan di branch `fitur-sapaan`, baris yang sama diubah dengan menambah `Sapa(nama)` di akhir. Karena kedua branch mengubah baris yang sama persis dengan output yang berbeda, git tidak bisa menggabungkannya secara otomatis dan meminta adjust manual. Untuk hasil akhir, dipilih versi yang menggabungkan kedua kebutuhan yaitu memuat Nama, NRP, dan versi Go di Level 5, juga menambahkan hasil `Sapa(nama)` sesuai perubahan di branch `fitur-sapaan` dengan format `\n` sebagai pemisah antar baris agar lebih mudah dibaca dibanding `|`.
 
 ## Kenapa .gitignore Penting
 (tulis di sini)
