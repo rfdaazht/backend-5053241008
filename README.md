@@ -32,7 +32,7 @@ Bagian di bawah ini **isi bertahap** sesuai level yang sedang kalian kerjakan (l
 - Kelas: M
 
 ## Commit vs Push
-(tulis di sini)
+`git commit` adalah proses menyimpan perubahan pada kode secara lokal, perubahannya terlihat di riwayat git sendiri dan belum dapat dilihat oleh orang lain. Sedangkan `git push` mengirim perubahan yang sudah di-commit ke repository online, yang nantinya dapat dilihat oleh rekan yang memiliki akses. Saat seseorang sudah commit tapi lupa push, lalu rekannya pull dari repositori, maka perubahan yang dikerjakan tidak akan ikut terbawa. Jika bagian yang sebenarnya sudah selesai dikerjakan kembali, maka saat bagian yang lupa di-push itu akhirnya di-push, akan menimbulkan konflik.
 
 ## Reproducibility
 (tulis di sini)
