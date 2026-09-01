@@ -6,7 +6,7 @@ import (
 )
 
 // TODO(Level 4): ganti dengan NRP kalian sendiri, contoh: "5025201012"
-const NRP = "0000000000"
+const NRP = "5053241008"
 
 // TODO(Level 3): kembalikan args[0] kalau ada isinya, kalau tidak kembalikan fallback.
 func ResolveNama(args []string, fallback string) string {
