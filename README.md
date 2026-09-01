@@ -35,7 +35,7 @@ Bagian di bawah ini **isi bertahap** sesuai level yang sedang kalian kerjakan (l
 `git commit` adalah proses menyimpan perubahan pada kode secara lokal, perubahannya terlihat di riwayat git sendiri dan belum dapat dilihat oleh orang lain. Sedangkan `git push` mengirim perubahan yang sudah di-commit ke repository online, yang nantinya dapat dilihat oleh rekan yang memiliki akses. Saat seseorang sudah commit tapi lupa push, lalu rekannya pull dari repositori, maka perubahan yang dikerjakan tidak akan ikut terbawa. Jika bagian yang sebenarnya sudah selesai dikerjakan kembali, maka saat bagian yang lupa di-push itu akhirnya di-push, akan menimbulkan konflik.
 
 ## Reproducibility
-(tulis di sini)
+Kalau anggota tim menjalankan program ini dengan versi Go yang berbeda, output dari `CetakInfo` juga akan berbeda karena memuat hasil `runtime.Version()`, misalnya satu orang menampilkan go1.21.0 sementara yang lain go1.23.0. Untuk program sederhana tidak akan jadi masalah karena perbedaan versi hanya terlihat di teks yang dicetak, tidak mempengaruhi jalannya program. Namun jika programnya kompleks, misal menggunakan fitur bahasa yang hanya tersedia di versi Go tertentu, atau bergantung pada library yang berubah antar versi, perbedaan versi Go bisa jadi masalah. Kalau satu anggota tim pakai versi lama yang tidak mendukung fitur tersebut, kodenya bisa gagal di-build di komputernya meskipun berhasil di komputer anggota lain, sehingga perlu menyepakati satu versi Go yang sama di awal.
 
 ## Catatan Merge Conflict
 (tulis di sini)
